@@ -1,11 +1,11 @@
-Función: Visualizar resumen general de los docentes
+Feature: Ver Resumen General de los Docentes
 
-  Escenario: El director visualiza al iniciar el año escolar el resumen general de los docentes
-    Dado que el director ha ingresado correctamente en la plataforma
-    Cuando selecciona la opción "Ver resumen general" al iniciar el año escolar
-    Entonces todas las estadísticas deben comenzar en 0.
+  Scenario: El director visualiza el resumen general de los docentes al iniciar el año escolar
+    Dado que el director ha iniciado sesión exitosamente en la plataforma
+    When selecciona la opción "Ver Resumen General" al inicio del año escolar
+    Then todas las estadísticas deben comenzar en 0.
 
-  Escenario: El director visualiza el resumen general de los docentes
-    Dado que el director ha ingresado correctamente en la plataforma
-    Cuando selecciona la opción "Ver resumen general"
-    Entonces debe ver diferentes gráficas que muestran el progreso de los docentes.
+  Scenario: El director visualiza el resumen general de los docentes
+    Dado que el director ha iniciado sesión exitosamente en la plataforma
+    When selecciona la opción "Ver Resumen General"
+    Then deberá ver diferentes gráficos que muestren el progreso de los docentes.
